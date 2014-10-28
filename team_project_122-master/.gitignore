@@ -1,0 +1,42 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Useless files
+Makefile
+moc_*.cpp
+
+# Ignored folders
+bin/
+obj/
+data/
+
+# Unwanted libraries
+obj/
+data/
+bin/
+
+# Useless qt files
+moc_*.cpp
+Makefile
+
+# Vim files
+.*.swp

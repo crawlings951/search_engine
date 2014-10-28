@@ -1,0 +1,22 @@
+# Compiler and compiler flags
+CC=g++
+# For final
+CFLAGS=-Werror=all -std=c++11 -O2 -I./lib
+# For debug
+# CFLAGS=-Wall -std=c++11 -g -I./lib
+# Directories
+BDIR=bin
+
+all: $(BDIR)/crawler
+
+$(BDIR)/crawler: $(BDIR)/.dirstamp
+	$(CC) src/crawler.cpp -o $@ $(CFLAGS)
+
+$(BDIR)/.dirstamp:
+	mkdir -p bin
+
+# Probably not how I should implement clean!
+.PHONY: clean
+
+clean:
+	-@rm $(BDIR)/crawler

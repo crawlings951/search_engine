@@ -1,4 +1,6 @@
-search_engine
+PLEASE IGNORE RAILS FOLDER
+
+Search Engine
 =============
 
 
